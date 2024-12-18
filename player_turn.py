@@ -20,5 +20,5 @@ def player_turn ():
     print("Voici votre proposition",player_list)
     return player_list
 
-print(initialisation.colors)
-player_turn()
+##print(initialisation.colors)
+##player_turn()
