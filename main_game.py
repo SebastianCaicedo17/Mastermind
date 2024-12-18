@@ -13,10 +13,12 @@ def main_game():
     player_list = player_turn.player_turn()
     verification.verification(game_list, player_list)
     for game_turn in range (10):
-        if game_turn == 9: print("Vous avez perdu")
+        if game_turn == 1: 
+            print("Vous avez perdu")    
+            break
         print("Tour n°", game_turn+1)
         verification.verification(game_list, player_list)
-        player_turn.player_turn()
+        player_list = player_turn.player_turn()
 
 
 main_game ()
